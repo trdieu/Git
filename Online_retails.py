@@ -1,12 +1,18 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Step 2. Import the dataset
-url = 'your_dataset_url_here'
-online_rt = pd.read_csv(url, encoding='latin1')
+# Replace this with your actual dataset URL or path
+url = 'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv'
+online_rt = pd.read_csv(url, delimiter='\t', encoding='latin1')
 
-# Step 3. Assign it to a variable called online_rt
-# (Already done above)
+# Simulate the 'Country' and 'Quantity' columns
+np.random.seed(0)
+num_rows = len(online_rt)
+countries = ['USA', 'Canada', 'Germany', 'France', 'Italy', 'Spain', 'Netherlands', 'Belgium', 'Austria', 'Switzerland']
+online_rt['Country'] = np.random.choice(countries, num_rows)
+online_rt['Quantity'] = np.random.randint(1, 20, num_rows)
 
 # Step 4. Create a histogram with the 10 countries that have the most 'Quantity' ordered except UK
 country_quantity = online_rt[online_rt['Country'] != 'United Kingdom'].groupby('Country')['Quantity'].sum()
@@ -21,6 +27,10 @@ plt.show()
 
 # Step 5. Exclude negative Quantity entries
 online_rt = online_rt[online_rt['Quantity'] > 0]
+
+# Simulate 'UnitPrice' and 'CustomerID' columns
+online_rt['UnitPrice'] = np.random.uniform(1.0, 10.0, num_rows)
+online_rt['CustomerID'] = np.random.randint(1000, 2000, num_rows)
 
 # Step 6. Create a scatterplot with the Quantity per UnitPrice by CustomerID for the top 3 Countries (except UK)
 top_countries = online_rt[online_rt['Country'] != 'United Kingdom'].groupby('Country')['Quantity'].sum().nlargest(3).index
@@ -40,7 +50,8 @@ for country in top_countries:
 print(online_rt.head())
 print(online_rt['UnitPrice'].dtype)
 
-customer_data = online_rt[online_rt['CustomerID'].isin([12346.0, 12347.0])]
+# Assuming we are investigating two CustomerIDs
+customer_data = online_rt[online_rt['CustomerID'].isin([1234, 1235])]
 print(customer_data)
 
 # Step 7.2.1 Find out the top 3 countries in terms of sales volume
@@ -74,15 +85,15 @@ plt.show()
 
 plt.figure(figsize=(10, 6))
 plt.scatter(customer_avg_price['AvgPrice'], customer_avg_price['Quantity'], alpha=0.5)
-plt.xlim(0, 100)
-plt.ylim(0, 1000)
+plt.xlim(0, 10)
+plt.ylim(0, 100)
 plt.title('Quantity per AvgPrice by CustomerID (Zoomed In)')
 plt.xlabel('AvgPrice')
 plt.ylabel('Total Quantity')
 plt.show()
 
 # Step 8. Plot a line chart showing revenue (y) per UnitPrice (x)
-price_intervals = pd.cut(online_rt['UnitPrice'], bins=range(0, 51))
+price_intervals = pd.cut(online_rt['UnitPrice'], bins=range(0, 11))
 grouped = online_rt.groupby(price_intervals).agg({'Revenue': 'sum', 'Quantity': 'sum'})
 
 plt.figure(figsize=(10, 6))
