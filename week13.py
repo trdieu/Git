@@ -36,7 +36,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 models = {
     "Hồi quy tuyến tính": LinearRegression(),
     "Hồi quy Ridge": Ridge(alpha=1.0),
-    "Rừng ngẫu nhiên": RandomForestRegressor(n_estimators=100, random_state=42)
+    "Random Forest": RandomForestRegressor(n_estimators=100, random_state=42)
 }
 
 # Huấn luyện và đánh giá các mô hình
