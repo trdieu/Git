@@ -4,10 +4,7 @@ public class Course {
     public int credits;
     public Map<Student, Double> studentScores;
 
-    
-    public Course(String courseID, String courseName, int credits) {
-        this.courseID = courseID;
-        this.courseName = courseName;
-        this.credits = credits;
-        this.studentScores = new HashMap<>();
-    }
+    public void addStudent(Student student);
+    public void removeStudent(Student student);
+    public void assignGrade(Student student, double grade);
+}
