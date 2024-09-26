@@ -1,5 +1,6 @@
-studentID: String
-name: String
-dob: LocalDate 
-gpa: double 
-registeredCourses: List<Course> 
+public class Student {
+    public String studentID;
+    public String name;
+    public LocalDate dob;
+    public double gpa;
+    public List<Course> registeredCourses;
