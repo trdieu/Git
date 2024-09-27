@@ -30,5 +30,5 @@ Chức năng xem lịch thi.
 ## Cách Cài Đặt
 1. Clone repository từ GitHub:
    ```bash
-   git clone -b FinaltermCode https://github.com/Nguyen1976/JAVA_OOP_PKA_Nhom_10.git
+   https://github.com/trdieu/OOP.git
    
