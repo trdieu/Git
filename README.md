@@ -17,7 +17,7 @@ Dự án này là một hệ thống quản lý sinh viên, giúp tối ưu hóa
 ## 1.1 UML Activivy Diagram
 Chức năng xem lịch thi.
 
-![UML](https://drive.google.com/file/d/1MFTWq2wqvEwuxMEN2tLMKJihwydFtARW/view?usp=sharing)
+![UML]([https://drive.google.com/file/d/1MFTWq2wqvEwuxMEN2tLMKJihwydFtARW/view?usp=sharing](https://drive.google.com/file/d/1MFTWq2wqvEwuxMEN2tLMKJihwydFtARW/view))
 
 
 ## Giao diện đầu tiên của dự án
