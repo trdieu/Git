@@ -1,4 +1,4 @@
-GROUP_10-OOP-N03 
+GROUP_7-OOP-N01 
 # Hệ Thống Quản Lý Sinh Viên
 
 ## Giới Thiệu Dự Án
@@ -9,8 +9,13 @@ Dự án này là một hệ thống quản lý sinh viên, giúp tối ưu hóa
 
 ## Chức Năng Chính
 - Thêm, sửa, xoá sinh viên
-- Thêm, sửa, xoá 
-- 
+- Tìm kiếm thời khóa biểu cho sinh viên
+- Tra cứu điểm thi cho sinh viên
+- Tra cứu lịch thi của sinh viên
+  
+##Mô hình chức năng chung của dự án
+![UML]()
+
 
 ## UML Dự Án
 
@@ -18,6 +23,7 @@ Dự án này là một hệ thống quản lý sinh viên, giúp tối ưu hóa
 Chức năng xem lịch thi.
 
 ![UML]([https://drive.google.com/file/d/1MFTWq2wqvEwuxMEN2tLMKJihwydFtARW/view?usp=sharing](https://drive.google.com/file/d/1MFTWq2wqvEwuxMEN2tLMKJihwydFtARW/view))
+
 
 
 ## Giao diện đầu tiên của dự án
