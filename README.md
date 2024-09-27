@@ -1,4 +1,4 @@
-GROUP_7-OOP-N01 
+![image](https://github.com/user-attachments/assets/9af7e575-a19e-412b-9474-4c80bacaf27a)GROUP_7-OOP-N01 
 # Hệ Thống Quản Lý Sinh Viên
 
 ## Giới Thiệu Dự Án
@@ -23,6 +23,9 @@ Dự án này là một hệ thống quản lý sinh viên, giúp tối ưu hóa
 Chức năng xem lịch thi.
 
 ![UML]([https://drive.google.com/file/d/1MFTWq2wqvEwuxMEN2tLMKJihwydFtARW/view?usp=sharing](https://drive.google.com/file/d/1MFTWq2wqvEwuxMEN2tLMKJihwydFtARW/view))
+
+![Uploading image.png…]()
+
 
 
 
