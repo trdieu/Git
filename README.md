@@ -24,8 +24,6 @@ Chức năng xem lịch thi.
 
 ![UML]([https://drive.google.com/file/d/1MFTWq2wqvEwuxMEN2tLMKJihwydFtARW/view?usp=sharing](https://drive.google.com/file/d/1MFTWq2wqvEwuxMEN2tLMKJihwydFtARW/view))
 
-![image](https://github.com/user-attachments/assets/f6876748-34bd-4d97-9993-3bd46a384ff9)
-
 
 ## Giao diện đầu tiên của dự án
 ![firstScreen]()
