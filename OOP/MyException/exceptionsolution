@@ -3,10 +3,10 @@ try {
 
     switch (action) {
         case "addStudent":
-            System.out.println("Đang thêm một sinh viên...");
+            System.out.println("Loading...");
             break;
         case "viewStudent":
-            System.out.println("Đang xem thông tin sinh viên...");
+            System.out.println("Loading...");
             break;
         default:
             throw new StudentManagementException("Hành động không hợp lệ: " + action);
@@ -14,9 +14,9 @@ try {
 } catch (StudentManagementException e) {
     System.out.println("StudentManagementException: " + e.getMessage());
 } catch (RuntimeException e) {
-    System.out.println("Đã xảy ra RuntimeException: " + e.getMessage());
+    System.out.println("RuntimeException: " + e.getMessage());
 } catch (Exception e) {
-    System.out.println("Đã xảy ra lỗi không mong đợi: " + e.getMessage());
+    System.out.println("Đã xảy ra lỗi : " + e.getMessage());
 } finally {
-    System.out.println("Các hành động dọn dẹp có thể được thực hiện ở đây.");
+    System.out.println("Các hành động .");
 }
