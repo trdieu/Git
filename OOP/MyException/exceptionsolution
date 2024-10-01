@@ -1,0 +1,22 @@
+try {
+    String action = "someAction";
+
+    switch (action) {
+        case "addStudent":
+            System.out.println("Đang thêm một sinh viên...");
+            break;
+        case "viewStudent":
+            System.out.println("Đang xem thông tin sinh viên...");
+            break;
+        default:
+            throw new StudentManagementException("Hành động không hợp lệ: " + action);
+    }
+} catch (StudentManagementException e) {
+    System.out.println("StudentManagementException: " + e.getMessage());
+} catch (RuntimeException e) {
+    System.out.println("Đã xảy ra RuntimeException: " + e.getMessage());
+} catch (Exception e) {
+    System.out.println("Đã xảy ra lỗi không mong đợi: " + e.getMessage());
+} finally {
+    System.out.println("Các hành động dọn dẹp có thể được thực hiện ở đây.");
+}
