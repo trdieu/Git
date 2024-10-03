@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9af7e575-a19e-412b-9474-4c80bacaf27a)GROUP_7-OOP-N01 
+GROUP_7-OOP-N01 
 # Hệ Thống Quản Lý Sinh Viên
 
 ## Giới Thiệu Dự Án
