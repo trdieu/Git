@@ -25,7 +25,7 @@ Dự án này là một hệ thống quản lý sinh viên, giúp tối ưu hóa
 - Tra cứu lịch thi của sinh viên
   
 ##Mô hình chức năng chung của dự án
-![UML](https://drive.google.com/file/d/1osh8m6a9BBtyAlBHDhbaU1XfOeYej2K7/view?usp=sharing)
+![UML](https://upload.wikimedia.org/wikipedia/vi/1/19/Marvel_Universe_%28Civil_War%29.jpg)
 
 
 ## UML Dự Án
