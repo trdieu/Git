@@ -8,6 +8,17 @@ Dự án này là một hệ thống quản lý sinh viên, giúp tối ưu hóa
 - **Trương Văn Diệu**: Phát triển phần mềm toàn diện.
 
 ## Chức Năng Chính
+
+
+<details>
+  <summary>Quản lý lớp môn học</summary>
+
+- Hiển thị thông tin lớp môn học: môn học
+  
+- Tìm kiếm các lớp môn học theo mã sinh viên.
+  
+- Thêm, sửa, xóa các lớp môn học.
+
 - Thêm, sửa, xoá sinh viên
 - Tìm kiếm thời khóa biểu cho sinh viên
 - Tra cứu điểm thi cho sinh viên
