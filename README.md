@@ -18,7 +18,7 @@ Dự án này là một hệ thống quản lý sinh viên, giúp tối ưu hóa
 - Tìm kiếm các lớp môn học theo mã sinh viên.
   
 - Thêm, sửa, xóa các lớp môn học.
-
+</details>
 - Thêm, sửa, xoá sinh viên
 - Tìm kiếm thời khóa biểu cho sinh viên
 - Tra cứu điểm thi cho sinh viên
