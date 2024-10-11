@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 import styled from "styled-components";
 import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
-import Logo from "./uet.png";
+import Logo from "./pka.png";
 import AppLogo from "./applogo_1.png";
 
 const Body = styled.div`
