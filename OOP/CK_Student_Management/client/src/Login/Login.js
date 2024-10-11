@@ -223,8 +223,8 @@ class Login extends Component {
             <App_logo_container>
               <App_logo src={AppLogo} />
               <Comment>Hệ thống hỗ trợ quản lý sinh viên Classe369</Comment>
-              <Comment1>Xây dựng và phát triển bởi N3-INT3306_22</Comment1>
-              <Comment2>Trường Đại học Công nghệ - ĐHQGHN</Comment2>
+              <Comment1>Xây dựng và phát triển bởi N7_OOP_N01</Comment1>
+              <Comment2>Trường Đại Học Phenikaa</Comment2>
             </App_logo_container>
             <Form_container>
               <Form action='' method='post' onSubmit={this.submit}>
