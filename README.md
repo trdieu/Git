@@ -8,13 +8,24 @@ Dự án này là một hệ thống quản lý sinh viên, giúp tối ưu hóa
 - **Trương Văn Diệu**: Phát triển phần mềm toàn diện.
 
 ## Chức Năng Chính
+
+
+<details>
+  <summary>Quản lý lớp môn học</summary>
+
+- Hiển thị thông tin lớp môn học: môn học
+  
+- Tìm kiếm các lớp môn học theo mã sinh viên.
+  
+- Thêm, sửa, xóa các lớp môn học.
+</details>
 - Thêm, sửa, xoá sinh viên
 - Tìm kiếm thời khóa biểu cho sinh viên
 - Tra cứu điểm thi cho sinh viên
 - Tra cứu lịch thi của sinh viên
   
 ##Mô hình chức năng chung của dự án
-![UML]()
+![UML](blob:https://www.facebook.com/2bf00a15-79da-4db8-a899-a3868f2b062e)
 
 
 ## UML Dự Án
