@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi ảnh lớn</title>
+    <style>
+        .thumb img {
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .thumb img:hover {
+            border-color: red;
+        }
+
+        .large {
+            width: 500px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img id="largeImage" src="1.jpg" alt="Large Image" class="large">
+
+    <div class="thumb">
+        <img src="1.jpg" alt="Ảnh 1" onmouseover="changeImage('1.jpg')">
+        <img src="2.jpg" alt="Ảnh 2" onmouseover="changeImage('2.jpg')">
+        <img src="3.jpg" alt="Ảnh 3" onmouseover="changeImage('3.jpg')">
+        <img src="4.jpg" alt="Ảnh 4" onmouseover="changeImage('4.jpg')">
+        <img src="5.jpg" alt="Ảnh 5" onmouseover="changeImage('5.jpg')">
+    </div>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById("largeImage").src = imageSrc;
+        }
+    </script>
+</body>
+</html>

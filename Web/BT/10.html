@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoa Công Nghệ Thông Tin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1A3B73;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar-left {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .navbar-right {
+            list-style-type: none;
+            display: flex;
+            position: relative;
+        }
+
+        .navbar-right li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .navbar-right li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-left: 1px solid white;
+            font-size: 14px;
+        }
+
+        .navbar-right li a:hover {
+            background-color: #314a8c;
+            border-radius: 4px;
+        }
+
+        /* Dropdown menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .navbar-right li:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Main content */
+        .main-content {
+            background-color: #f1f5fb;
+            padding: 20px;
+        }
+
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main-content p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">KHOA CÔNG NGHỆ THÔNG TIN</div>
+        <ul class="navbar-right">
+            <li>
+                <a href="#">Giới thiệu</a>
+                <div class="dropdown-content">
+                    <a href="#">Giới thiệu chung</a>
+                    <a href="#">Đội ngũ cán bộ, giảng viên</a>
+                    <a href="#">Cơ sở vật chất</a>
+                </div>
+            </li>
+            <li><a href="#">Tuyển sinh</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Đào tạo</a></li>
+            <li><a href="#">Nghiên cứu</a></li>
+            <li><a href="#">Hợp tác</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <p>Khả năng ứng dụng linh hoạt, sáng tạo các kiến thức vào thực tế, vững tin bắt đầu sự nghiệp và kiến tạo tương lai của chính mình! Để được tư vấn và giải đáp các thắc mắc hoàn toàn miễn phí, bạn vui lòng điền đầy đủ thông tin cá nhân vào bảng đăng ký tuyển sinh trực tuyến dưới đây. Chúng tôi sẽ chủ động liên hệ lại bạn trong vòng 24h kể từ khi nhận được thông tin đăng ký.</p>
+        <h1>THÔNG TIN ĐĂNG KÝ</h1>
+        <p>Lưu ý: Những mục đánh dấu (*) là thông tin bắt buộc phải điền.</p>
+    </div>
+</body>
+</html>

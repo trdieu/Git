@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải phương trình bậc nhất</title>
+    <style>
+        .container {
+            margin: 20px;
+        }
+        .output {
+            background-color: lightgray;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="heSoA">Hệ số a:</label>
+        <input type="number" id="heSoA" value="2"><br><br>
+
+        <label for="heSoB">Hệ số b:</label>
+        <input type="number" id="heSoB" value="3"><br><br>
+
+        <button onclick="giaiPT()">Giải PT</button>
+
+        <div id="ketQua" class="output"></div>
+    </div>
+
+    <script>
+        function giaiPT() {
+            var a = document.getElementById("heSoA").value;
+            var b = document.getElementById("heSoB").value;
+
+            // Chuyển đổi giá trị về số
+            a = parseFloat(a);
+            b = parseFloat(b);
+
+            // Kiểm tra hệ số a
+            if (a === 0) {
+                if (b === 0) {
+                    document.getElementById("ketQua").innerHTML = "Phương trình vô số nghiệm.";
+                } else {
+                    document.getElementById("ketQua").innerHTML = "Phương trình vô nghiệm.";
+                }
+            } else {
+                var nghiem = -b / a;
+                document.getElementById("ketQua").innerHTML = `Phương trình: ${a}x + ${b} = 0<br>Có nghiệm: ${nghiem}`;
+            }
+        }
+    </script>
+</body>
+</html>

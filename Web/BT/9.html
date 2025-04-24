@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức Học</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #f50057;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .main-content {
+            display: flex;
+        }
+
+        .main-article {
+            width: 65%;
+            margin-right: 10px;
+        }
+
+        .main-article img {
+            width: 100%;
+            height: auto;
+        }
+
+        .main-article h2 {
+            font-size: 16px;
+            color: #f50057;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .main-article p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .side-articles {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side-articles .article {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .side-articles .article img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .side-articles .article p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        .tabs a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">HỌC</div>
+        <div class="tabs">
+            <a href="#">Tuyển sinh</a>
+            <a href="#">Du học</a>
+        </div>
+        <div class="main-content">
+            <div class="main-article">
+                <img src="h2.jpg" alt="Main article image">
+                <h2>Nghệ An: 4/441 bài thi vào lớp 10 thay đổi điểm sau chấm phúc khảo</h2>
+                <p>Tại Kỳ thi tuyển sinh vào lớp 10 Nghệ An năm 2019, sau khi công bố kết quả, có 441 đơn đề nghị chấm phúc khảo của thí sinh. Kết quả có 4 bài thi được thay đổi điểm số và đều tăng so với điểm cũ.</p>
+            </div>
+            <div class="side-articles">
+                <div class="article">
+                    <img src="h3.jpg" alt="Article 1 image">
+                    <p>Mốc thời gian thí sinh cần nhớ sau kỳ thi THPT quốc gia 2019</p>
+                </div>
+                <div class="article">
+                    <img src="h4.jpg" alt="Article 2 image">
+                    <p>Có cần thiết phải chấm lại toàn bộ những bài thi Ngữ văn có điểm cao?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

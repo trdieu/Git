@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phóng to ảnh</title>
+    <style>
+        /* Phong cách cho ảnh lớn */
+        .large {
+            width: 500px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        /* Phong cách cho nền đen và ảnh phóng to */
+        .overlay {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Ảnh phóng to */
+        .overlay img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <img id="largeImage" src="1.jpg" alt="Ảnh lớn" class="large" onclick="openOverlay()">
+
+    <!-- Nền đen và ảnh phóng to -->
+    <div id="overlay" class="overlay" onclick="closeOverlay()">
+        <img id="overlayImage" src="1.jpg" alt="Ảnh phóng to">
+    </div>
+
+    <script>
+        // Hàm mở ảnh phóng to
+        function openOverlay() {
+            var largeImage = document.getElementById('largeImage');
+            var overlayImage = document.getElementById('overlayImage');
+            overlayImage.src = largeImage.src;
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        // Hàm đóng ảnh phóng to
+        function closeOverlay() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

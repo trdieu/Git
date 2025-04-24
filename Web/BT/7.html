@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời sự</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .news-list {
+            width: 60%;
+            float: left;
+        }
+
+        .news-list ul {
+            list-style-type: none;
+        }
+
+        .news-list ul li {
+            padding: 10px 0;
+            border-bottom: 1px dotted #ccc;
+            font-size: 16px;
+        }
+
+        .news-list ul li:last-child {
+            border-bottom: none;
+        }
+
+        .featured-news {
+            width: 35%;
+            float: right;
+        }
+
+        .featured-news img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .featured-news h3 {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: normal;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">THỜI SỰ</div>
+        <div class="clearfix">
+            <div class="news-list">
+                <ul>
+                    <li>Kinh hoàng ô tô "điên" tông vào nhiều người đang dừng chờ đèn đỏ ở Hà Nội</li>
+                    <li>CSGT kiểm tra ô tô đang dừng khẩn cấp trên cao tốc, phát hiện nữ tài xế đi một mình đang khó thở</li>
+                    <li>Nước ngập ngang bụng người lớn, Quảng Ninh dùng xe tải quân sự đưa học sinh về nhà</li>
+                </ul>
+            </div>
+            <div class="featured-news">
+                <img src="h1.jpg" alt="Hà Nội: Người đàn ông tử vong">
+                <h3>Hà Nội: Người đàn ông tử vong trong tư thế treo cổ, kết quả xét nghiệm sáng nay dương tính với SARS-CoV-2</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

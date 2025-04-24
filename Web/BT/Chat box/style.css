@@ -1,0 +1,31 @@
+.chatbox-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #f8d7da;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox-header {
+  background-color: #f5c6cb;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.chatbox-content {
+  display: none;
+  padding: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
